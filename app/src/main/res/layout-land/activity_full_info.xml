@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/myActionBar_size"
+        android:background="@color/myActionBar_bg_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/dialog_info_imbtn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_menu_selector"
+                android:src="@drawable/btn_back" />
+
+            <TextView
+                android:id="@+id/activity_addGoods_tv_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:text="Full item info"
+                android:layout_weight="1"
+                android:textColor="@color/myActionBar_text_color"
+                android:textSize="@dimen/myActionbar_text_size"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="56dp"
+       >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="Name:"
+                android:paddingLeft="16dp"/>
+
+        <TextView
+            android:id="@+id/dialog_info_tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_weight="2"
+            android:background="@android:drawable/alert_dark_frame"
+            android:gravity="center|left"
+            android:hint="Stuff name"
+            android:paddingLeft="16dp"
+            android:singleLine="true"
+            android:textColor="#ffff"
+            android:textColorHint="#ffff" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="Number:"
+                android:paddingLeft="16dp"/>
+
+            <TextView
+                android:id="@+id/dialog_info_tv_number_of_goods"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:background="@android:drawable/alert_dark_frame"
+                android:gravity="center|left"
+                android:hint="Number"
+                android:inputType="numberDecimal"
+                android:paddingLeft="16dp"
+                android:singleLine="true"
+                android:textColor="#ffff"
+                android:textColorHint="#ffff" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="Category:"
+                android:paddingLeft="16dp"/>
+
+            <TextView
+                android:id="@+id/dialog_info_tv_category"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:background="@android:drawable/alert_dark_frame"
+                android:gravity="center|left"
+                android:hint="Category"
+                android:inputType="numberDecimal"
+                android:paddingLeft="16dp"
+                android:singleLine="true"
+                android:textColor="#ffff"
+                android:textColorHint="#ffff" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="Price:"
+                android:paddingLeft="16dp"/>
+
+            <TextView
+                android:id="@+id/dialog_info_tv_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:background="@android:drawable/alert_dark_frame"
+                android:gravity="center|left"
+                android:hint="Price"
+                android:inputType="numberDecimal"
+                android:paddingLeft="16dp"
+                android:singleLine="true"
+                android:textColor="#ffff"
+                android:textColorHint="#ffff" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:text="Comments:"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"/>
+
+                <TextView
+                    android:id="@+id/dialog_info_tv_comments"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:background="@android:drawable/editbox_background"
+                    android:inputType="textMultiLine"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="@color/myActionBar_bg_color"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <AutoCompleteTextView
+        android:id="@+id/fragment_search_atv"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:hint="Search"
+        android:textStyle="italic"
+        android:textColor="@color/myActionBar_text_color"
+        android:textColorHint="@color/myActionBar_text_color"
+        android:background="@android:drawable/editbox_dropdown_dark_frame"
+        android:singleLine="true"
+        />
+        <ImageButton
+            android:id="@+id/fragment_search_imbtn_close"
+            android:layout_height="25dp"
+            android:layout_width="25dp"
+            android:layout_gravity="center|start"
+            android:background="@drawable/btn_menu_selector"
+            android:src="@drawable/btn_back"
+            android:layout_marginLeft="4dp"
+            />
+    </FrameLayout>
+
+</LinearLayout>

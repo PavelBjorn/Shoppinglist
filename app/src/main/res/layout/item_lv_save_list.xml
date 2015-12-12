@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_lv_save_ll_files"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_name_selector"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/item_lv_save_list_imbtn_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/btn_set_money_selector" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_lv_save_list_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="name "
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="18dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/item_lv_save_list_tv_budget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:hint="budget"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/item_lv_save_list_tv_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:hint="count"
+                android:singleLine="true" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/item_lv_save_list_tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="date "
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/item_lv_save_list_imbtn_del"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/btn_menu_selector"
+        android:src="@drawable/btn_del_selector" />
+
+</LinearLayout>

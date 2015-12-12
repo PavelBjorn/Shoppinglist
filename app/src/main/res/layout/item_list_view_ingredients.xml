@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+    <LinearLayout
+        android:id="@+id/ll_ingredients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+    <CheckBox
+        android:id="@+id/elv_ch_chb_have"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/elv_ch_tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Name"
+        android:textSize="@dimen/second_text_size"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:singleLine="true"
+        />
+
+    <TextView
+        android:id="@+id/elv_ch_tv_count"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:hint="Count"
+        android:textSize="@dimen/second_text_size"
+        android:singleLine="true"
+        />
+</LinearLayout>
+
+
+
+</FrameLayout>

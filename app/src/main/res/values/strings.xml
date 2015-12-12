@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Shopping list</string>
+
+    <!--Menu item text-->
+    <string name="search">Search</string>
+    <string name="sort">Sorting</string>
+    <string name="save">Save</string>
+    <string name="load">Load</string>
+    <string name="send">Send</string>
+    <string name="exit">Exit</string>
+    <string name="clear">Clear</string>
+    <!--Menu activity add item text-->
+    <string name="exit_activity_add">Exit</string>
+    <string name="add_new_photo_acivity_add">Add new photo</string>
+    <!--Menu del list-->
+    <string name="menu_del_list_del">Delete</string>
+    <!--Context menu item-->
+
+    <string name="item_menu_edit">Edit</string>
+    <string name="item_menu_open">Open</string>
+    <string name="item_menu_del">Delete</string>
+
+
+    <!--Action bar text-->
+    <string name="myActionBar_title">Goods</string>
+    <string name="myActionBar_count">0/10</string>
+
+
+    <!--Dialog items-->
+    <string-array name="array_sort_dailog">
+        <item>Вy add date</item>
+        <item>Вy selection</item>
+        <item>Вy name</item>
+    </string-array>
+
+    <!--Activity add product-->
+
+
+    <string name="activity_add_product_title">Choose category</string>
+
+</resources>

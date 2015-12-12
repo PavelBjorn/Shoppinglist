@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+  >
+
+    <com.example.pavel.shoppinglist.view.MySquareImage
+        android:id="@+id/imv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:scaleType="centerCrop" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom|center"
+        android:alpha="0.7"
+        android:background="@color/backing_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_product_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Goods name"
+                android:textColor="@color/gv_item_text_color"
+                android:textSize="12sp" />
+             <TextView
+                 android:id="@+id/tv_product_price"
+                 android:layout_width="match_parent"
+                 android:layout_height="0dp"
+                 android:layout_marginLeft="3dp"
+                 android:layout_weight="1"
+                 android:gravity="center"
+                 android:text="price"
+                 android:textColor="@color/gv_item_text_color"
+                 android:textSize="12sp" />
+
+         </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_num_of_goods"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center|top"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="100"
+                    android:textColor="@color/gv_item_text_color"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/tv_units"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center|bottom"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="kg"
+                    android:textColor="@color/gv_item_text_color"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/item_grid_view_fl_bought"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:clickable="true"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <com.example.pavel.shoppinglist.view.MySquareImage
+            android:id="@+id/item_gv_imv_checked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/checked"
+            android:visibility="invisible" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/item_grid_view_ll_coments"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="left|top"
+        android:alpha="0.4"
+        android:background="@color/backing_color"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <ImageButton
+            android:id="@+id/imbtn_comments"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:src="@drawable/imbtn_comments"
+
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/item_grid_view_ll_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:alpha="0.4"
+        android:background="@color/backing_color"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/imbtn_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_menu" />
+    </FrameLayout>
+</FrameLayout>

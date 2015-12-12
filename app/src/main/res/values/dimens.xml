@@ -1,0 +1,47 @@
+<resources>
+
+    <!--MAIN ACTIVITY-->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--Views Sizes-->
+    <dimen name="myActionBar_size">56dp</dimen>
+    <dimen name="myActionBar_shadow_size">5dp</dimen>
+    <dimen name="gv_column_width">100dp</dimen>
+    <!--Dialog size-->
+    <dimen name="dialog_width">200dp</dimen>
+    <dimen name="dialog_height">300dp</dimen>
+    <!--Text size-->
+    <!--myActionBar text-->
+    <dimen name="myActionbar_text_size">20sp</dimen>
+
+
+
+    <!--Margin-->
+    <!--imbtn_menu-->
+    <dimen name="imbtn_menu_marginTop">10dp</dimen>
+    <dimen name="imbtn_menu_marginBottom">10dp</dimen>
+    <dimen name="imbtn_menu_marginLeft">10dp</dimen>
+    <dimen name="imbtn_menu_marginRight">10dp</dimen>
+    <!--myActionBar shadow-->
+    <dimen name="myActionbar_shadow_marginTop">56dp</dimen>
+    <dimen name="myActionbar_shadow_marginBottom">10dp</dimen>
+    <dimen name="myActionbar_shadow_marginLeft">10dp</dimen>
+    <dimen name="imyActionbar_shadow_marginRight">10dp</dimen>
+    <!--GV goods-->
+    <dimen name="gv_goods_marginTop">50dp</dimen>
+    <dimen name="gv_goods_marginBottom">10dp</dimen>
+    <dimen name="gv_goods_marginLeft">10dp</dimen>
+    <dimen name="gv_goods_marginRight">10dp</dimen>
+    <!--Edt Search on Main Activity-->
+    <dimen name="edt_search_on_main_activity_marginTop">8dp</dimen>
+    <dimen name="edt_search_on_main_activity_marginBottom">10dp</dimen>
+    <dimen name="edt_search_on_main_activity_marginLeft">10dp</dimen>
+    <dimen name="edt_search_on_main_activity_marginRight">10dp</dimen>
+
+    <!--Text-->
+    <dimen name="main_text_size">20sp</dimen>
+    <dimen name="second_text_size">16sp</dimen>
+
+</resources>

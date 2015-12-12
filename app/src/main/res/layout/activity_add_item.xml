@@ -1,0 +1,72 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/myActionBar_size"
+        android:background="@color/myActionBar_bg_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginRight="50dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/activity_addGoods_imbtn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_menu_selector"
+                android:src="@drawable/btn_back" />
+
+            <TextView
+                android:id="@+id/activity_addGoods_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:singleLine="true"
+                android:text="@string/activity_add_product_title"
+                android:textColor="@color/myActionBar_text_color"
+                android:textSize="@dimen/myActionbar_text_size"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/activity_addGoods_imbtn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_marginBottom="@dimen/imbtn_menu_marginBottom"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/imbtn_menu_marginTop"
+            android:background="@drawable/btn_menu_selector"
+            android:src="@drawable/btn_menu" />
+
+    </FrameLayout>
+
+
+    <GridView
+        android:id="@+id/activity_addGoods_gv_category"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="@dimen/gv_goods_marginTop"
+        android:columnWidth="@dimen/gv_column_width"
+        android:gravity="center"
+        android:horizontalSpacing="4dp"
+        android:longClickable="false"
+        android:numColumns="@integer/num_columns"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="4dp" />
+
+
+</FrameLayout>

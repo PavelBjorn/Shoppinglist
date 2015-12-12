@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="myActionBar_bg_color">#DD2C00</color>
+    <color name="myActionBar_shadow_color">#B0BEC5</color>
+    <color name="myActionBar_text_color">#FFFFFF</color>
+    <color name="activity_bg_color">#fff1e6e2</color>
+    <color name="gv_item_text_color">#ffff</color>
+    <color name="gv_item_checked_color">#ffffd841</color>
+    <color name="edt_search_main_bg_color">#ffffff</color>
+    <color name="backing_color">#263238</color>
+
+
+</resources>

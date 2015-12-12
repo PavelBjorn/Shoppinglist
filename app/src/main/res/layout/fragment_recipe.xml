@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/fragment_recipe_imv_photo"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/checked" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center|top"
+            android:alpha="0.7"
+            android:background="#263238">
+
+            <TextView
+                android:id="@+id/fragment_recipe_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:text="Recipe name"
+                android:singleLine="true"
+                android:textColor="#f1e6e2"
+                android:textSize="@dimen/myActionbar_text_size" />
+
+
+            <Button
+                android:id="@+id/fragment_recipe_ib_open_ing"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center|bottom"
+                android:background="@drawable/btn_menu_selector"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:text="Ingredients"
+                android:textColor="#FFFF"/>
+
+        </FrameLayout>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Description"
+        android:textSize="@dimen/main_text_size" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fragment_recipe_tv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:textSize="@dimen/second_text_size" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dl_navigation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/my_action_bar" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/main_activity_gl_fragment_content"
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        android:background="#f1e6e2"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/myActionBar_bg_color">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:src="@mipmap/ic_launcher"
+                android:layout_marginLeft="8dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shopping list"
+                android:layout_gravity="center"
+                android:textSize="@dimen/myActionbar_text_size"
+                android:textColor="@color/myActionBar_text_color"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/main_activity_navigation_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            >
+         <fragment
+             android:id="@+id/navigation_fragment"
+             android:name="com.example.pavel.shoppinglist.fragments.MainListFragment"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+        </FrameLayout>
+
+        </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

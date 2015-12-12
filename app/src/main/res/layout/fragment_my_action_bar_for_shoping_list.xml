@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|left"
+    android:orientation="horizontal"
+    android:background="@color/myActionBar_bg_color">
+
+
+    <LinearLayout
+        android:id="@+id/myActionBar_ll_titles"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/myActionBar_title"
+            android:textColor="@color/myActionBar_text_color"
+            android:textSize="@dimen/myActionbar_text_size"
+            android:singleLine="true"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tv_budget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:inputType="numberDecimal"
+            android:text="@string/myActionBar_title"
+            android:textColor="@color/myActionBar_text_color"
+            android:textSize="16dp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_count_goods"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/myActionBar_count"
+        android:textColor="@color/myActionBar_text_color"
+        android:textSize="@dimen/myActionbar_text_size"
+        android:layout_weight="1"
+        android:textStyle="italic" />
+
+</LinearLayout>

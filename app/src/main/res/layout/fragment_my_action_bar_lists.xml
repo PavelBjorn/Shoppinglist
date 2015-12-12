@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|left"
+    android:orientation="horizontal"
+    android:background="@color/myActionBar_bg_color">
+
+        <TextView
+            android:id="@+id/fragment_ab_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Shopping lists"
+            android:textColor="@color/myActionBar_text_color"
+            android:textSize="@dimen/myActionbar_text_size"
+            android:textStyle="italic" />
+
+</LinearLayout>
